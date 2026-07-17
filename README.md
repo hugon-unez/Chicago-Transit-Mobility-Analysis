@@ -7,7 +7,7 @@ The site is designed for GitHub Pages: it has no server, database, API key, or p
 ## What is included
 
 - Interactive tract map with six measures, a 5–60 minute transit threshold, county focus, tract search, hover values, and two-tract comparison.
-- Notebook view that renders the narrative, code, tables, and saved chart outputs directly in the site.
+- Analysis view that renders the narrative, code, tables, and saved chart outputs directly in the site.
 - Compact Chicago-only extracts derived from the 2.5 GB Opportunity Atlas source table.
 - Data-preparation script, codebook, GitHub Pages workflow, and source notebook.
 
@@ -53,7 +53,7 @@ Edit `notebook/chicago_transit_mobility.ipynb` in Jupyter or VS Code. Its existi
 npm run notebook:sync
 ```
 
-Then reload the local site and open **Notebook**. You do not need to convert the notebook to HTML.
+Then reload the local site and open **Analysis**. You do not need to convert the notebook to HTML.
 
 If you prefer to keep editing the original notebook in the parent directory, copy it into `notebook/` and run the same sync command. This repository intentionally does not overwrite the original.
 

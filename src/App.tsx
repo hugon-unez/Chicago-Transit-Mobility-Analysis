@@ -132,7 +132,7 @@ function Header({ view, onView }: { view: ViewKey; onView: (view: ViewKey) => vo
       <nav aria-label="Primary navigation">
         {(["map", "notebook", "about"] as ViewKey[]).map((item) => (
           <button className={view === item ? "active" : ""} key={item} onClick={() => onView(item)}>
-            {item === "map" ? "Map" : item[0].toUpperCase() + item.slice(1)}
+            {item === "map" ? "Map" : item === "notebook" ? "Analysis" : "About"}
           </button>
         ))}
       </nav>

@@ -112,13 +112,13 @@ export default function NotebookView() {
   }, []);
 
   if (error) return <div className="loading-state">{error}</div>;
-  if (!notebook) return <div className="loading-state">Opening the research notebook…</div>;
+  if (!notebook) return <div className="loading-state">Opening the analysis…</div>;
 
   return (
     <main className="notebook-page">
       <header className="page-intro notebook-intro">
         <div>
-          <span className="eyebrow">Research workbook</span>
+          <span className="eyebrow">Analysis</span>
           <h1>Transit access and upward mobility</h1>
           <p>
             Read the narrative, code, results, and charts without leaving the project. The original
