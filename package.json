@@ -1,0 +1,30 @@
+{
+  "name": "chicago-mobility-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite --config vite.pages.config.ts",
+    "build": "vite build --config vite.pages.config.ts",
+    "preview": "vite preview --config vite.pages.config.ts",
+    "test": "npm run build",
+    "data": "../.venv/bin/python scripts/prepare_data.py",
+    "notebook:sync": "mkdir -p public/notebook && cp notebook/chicago_transit_mobility.ipynb public/notebook/chicago_transit_mobility.ipynb"
+  },
+  "dependencies": {
+    "maplibre-gl": "^5.7.1",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "typescript": "5.9.3",
+    "vite": "8.0.13"
+  },
+  "type": "module"
+}
