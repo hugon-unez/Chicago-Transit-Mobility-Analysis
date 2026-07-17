@@ -1,6 +1,6 @@
 # Chicago Transit Mobility
 
-A static project site built from `chicago_transit_mobility.ipynb`. It maps Chicago-area transit job accessibility alongside tract-level upward-mobility outcomes and carries the complete notebook in an on-site reader.
+A static project site built by Codex from `chicago_transit_mobility.ipynb`. The original notebook was written manually by Hugo Nunez. It maps Chicago-area transit job accessibility alongside tract-level upward-mobility outcomes and carries the complete notebook in an on-site reader.
 
 The site is designed for GitHub Pages: it has no server, database, API key, or paid service. The browser loads a 1.8 MB simplified GeoJSON file and the relevant metrics only.
 
