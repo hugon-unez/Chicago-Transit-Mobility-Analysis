@@ -316,7 +316,12 @@ function MapView({ summary }: { summary: AtlasSummary }) {
       <aside className="control-panel">
         <div className="panel-heading">
           <h1>Transit Access &amp; Upward Mobility in Chicago</h1>
-          <p>Explore whether access to more jobs by transit is related to upward mobility across Chicago-area neighborhoods.</p>
+          <p>
+            Our analysis finds that transit access is deeply intertwined with access to economic
+            opportunity, but adds no detectable explanatory power for upward mobility once neighborhood
+            composition is held constant. Explore how job access by transit, income mobility, and
+            neighborhood demographics vary across Chicago-area census tracts.
+          </p>
         </div>
         {metric === "jobs" && (
           <div className="threshold-control primary-control">
