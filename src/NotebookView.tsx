@@ -14,6 +14,7 @@ type NotebookCell = {
 type Notebook = { cells: NotebookCell[] };
 
 const NOTEBOOK_PATH = `${import.meta.env.BASE_URL}notebook/chicago_transit_mobility.ipynb`;
+const APPENDIX_NOTEBOOK_PATH = `${import.meta.env.BASE_URL}notebook/chicago_transit_mobility_original_with_crosswalk_appendix.ipynb`;
 
 function headingId(text: string) {
   return text
@@ -125,9 +126,14 @@ export default function NotebookView() {
             Jupyter file remains available for editing and download.
           </p>
         </div>
-        <a className="button secondary" href={NOTEBOOK_PATH} download>
-          Download .ipynb
-        </a>
+        <div className="notebook-actions">
+          <a className="button secondary" href={NOTEBOOK_PATH} download>
+            Download .ipynb
+          </a>
+          <a className="button secondary" href={APPENDIX_NOTEBOOK_PATH} download>
+            Download original + appendix
+          </a>
+        </div>
       </header>
       <article className="notebook-document">
         {notebook.cells.map((cell, index) => (
