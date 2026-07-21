@@ -47,9 +47,9 @@ const METRICS: Record<
     colors: ["#f1ead9", "#d5d5ae", "#9fbb91", "#599a7d", "#1e6d68"],
   },
   frac_black: {
-    label: "Share of Atlas children who are Black",
-    shortLabel: "Black child share",
-    description: "Black children as a share of children represented in the pooled Atlas sample.",
+    label: "Share of children who are Black",
+    shortLabel: "Share of children who are Black",
+    description: "Black children as a share of children represented in the pooled Opportunity Atlas sample.",
     low: "Lower share",
     high: "Higher share",
     colors: ["#f2ede4", "#dacfb9", "#b5a68b", "#84735f", "#4f4038"],
@@ -170,7 +170,7 @@ function DetailsCard({ tract, threshold, onRemove }: { tract: TractProperties; t
         <div><dt>{threshold}-minute jobs</dt><dd>{formatValue("jobs", tract[`jobs_${threshold}`])}</dd></div>
         <div><dt>Network reach</dt><dd>{formatValue("transit_added", tract.transit_added)}</dd></div>
         <div><dt>Mean parent rank</dt><dd>{formatValue("parent_rank", tract.parent_rank)}</dd></div>
-        <div><dt>Black child share</dt><dd>{formatValue("frac_black", tract.frac_black)}</dd></div>
+        <div><dt>Share of children who are Black</dt><dd>{formatValue("frac_black", tract.frac_black)}</dd></div>
       </dl>
     </article>
   );
